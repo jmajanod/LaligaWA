@@ -5,7 +5,7 @@
 #library(readxl)
 #########
 
-path <- "C:/Users/jamaj/Documents/LaligaWA/data"
+path <- "data/"
 list.files(path)
 ficheros <- list.files(path) 
 ficheros <- ficheros[-1]
@@ -41,7 +41,7 @@ head(resultados)
 #     - Pesos:      Fuerza de cada equipo
 
 if (!"historico" %in% ls()) { 
-          historico <- read_xlsx("C:/Users/jamaj/Documents/Laliga/data/ClasificacionHistorica.xlsx")
+          historico <- read_xlsx("data/ClasificacionHistorica.xlsx")
           nombres <- (unique(historico$Equipo)) %>% str_sort() %>% as.factor()
           historico$Equipo <- as.factor(historico$Equipo)
           levels(historico$Equipo) = levels(nombres)
