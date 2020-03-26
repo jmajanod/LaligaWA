@@ -1,0 +1,16 @@
+Ejecutar en este sentido:
+- CargaResultados:  Vuelca los excel de todas las temporadas a la variable 
+               - resultados
+                    
+              Carga la clasificacion historica y da un ranking a cada equipo.
+               - historico:   Clasificacion historica Liga
+               - nombres:     Nombres de todos los equipos de la liga historicamente
+               - temporadas:  temporadas con datos
+               - ultima_jornada:  Ultima jornada en la actual temporada. Sirve para nivelar el peso de la clasificacion de la temp. actual
+               - peso_temporad: El peso que se va a dar a la clasificacion de cada temporada
+               - peso_clasificacion:  Peso de la clasificacion el la puntuacion final de cada equipo
+               - Pesos : El peso de cada equipo. A mas peso, mejor equipo
+
+
+ui.R   Aplicacion shiny que muestra el resultado ejecutado.
+
